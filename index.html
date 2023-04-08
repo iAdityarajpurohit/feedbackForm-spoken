@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+    <div class="text">
+        <h1>Feedback-form</h1>
+        <p>
+            Dear all, <br>
+
+I believe it would be beneficial for us to create a supportive environment for English conversation where we can communicate without fear of judgement. With this in mind, I have an idea: we could talk daily and engage in different activities to practice and improve our language skills.
+
+I have also created a form for anyone who is interested in participating. Please note that all the information provided will be kept confidential, and no field in the form is mandatory.
+
+Thank you for your attention and I look forward to hearing your thoughts.
+<br>
+Best regards, <br>
+Aditya Rajpurohit
+        </p>
+    </div>
+  
+
+    <form class="detail" action="https://formspree.io/f/xqkogapv" method="post">
+        <br>
+        Name: <input name="Name" type="text" placeholder="Enter Your Name"  required
+                autocomplete="off"> <br>
+        Mobile: <input name="mobile" type="number" placeholder="whatsapp number"> <br>
+        which One is best plateform we talk 
+        <select name="plateform"  required>
+			<option value="">Please select</option>
+			<option value="whatsapp">whatsapp</option>
+			<option value="GoogleMeet">GoogleMeet</option>
+			<option value="instaGram">Instagram</option>
+		</select><br><br>
+        Do you like my idea
+        <label >
+            <input name="idea is" type="radio" value="good" autocomplete="off">
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="idea is"  value="bad" autocomplete="off">
+            No
+          </label>
+         <br> <br>
+        Preferable time
+        <label autocomplete="off">
+            <input type="radio" name="time" value="day">
+            day
+          </label>
+          <label>
+            <input type="radio" name="time" value="Evening">
+            Evening
+          </label>
+          <label>
+            <input type="radio" name="time" value="Night" autocomplete="off">
+            Night
+          </label>
+          <label autocomplete="off">
+            <input type="radio" name="time" value="No time issue">
+            No time issue
+          </label>
+         <br> <br>
+        How much time we talk: 
+        <select name="At least duration"  autocomplete="off">
+			<option value="">Please select</option>
+			<option value="15m">15min</option>
+			<option value="30m">30m</option>
+			<option value="1hr">1Hr</option>
+			<option value="more than 1hr">More than 1hr</option>
+		
+		</select><br><br>
+
+        message: <input type="text" id="message" name="suggestion" placeholder="if u have any suggestion please free to tell" autocomplete="off">
+        <br> <br>
+        <button type="submit">submit</button>
+          
+    </form>
+</body>
+</html>
